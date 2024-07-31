@@ -20,6 +20,19 @@ class EcbExchangeRates
 
     }
 
+    public function cacheData(string $filepath): bool 
+    {
+        
+        if(file_put_contents($filepath, $this->exchange_rates_json)){
+
+            return true;
+
+        }
+
+        return false;
+
+    }
+
     public function fetchExchangeRatesFromECB(): void
     {
 
