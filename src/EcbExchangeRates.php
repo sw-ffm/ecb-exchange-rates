@@ -41,11 +41,11 @@ class EcbExchangeRates
     
     private function extractExchangeRatesTimestamp(string $rates): string|bool
     {
-        $regexp = "/^.*<.*time=\'([0-9\-]+)\'.*>$/m";
+        $regexp = "/^.*<.*time=\'(?<timestamp>[0-9\-]+)\'.*>$/m";
 
         if(preg_match($regexp, $rates, $matches)){
 
-            return $matches[1];
+            return $matches['timestamp'];
 
         }
 
