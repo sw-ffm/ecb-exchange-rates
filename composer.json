@@ -1,0 +1,18 @@
+{
+    "name": "stefan/ecb-exchange-rates",
+    "description": "PHP class for the implementation, fetching and Json parsing of the daily exchange rates published by the ECB. The reference rates are usually updated once at around 16:00 CET every working day, except on target closing days.",
+    "type": "library",
+    "license": "Apache-2.0",
+    "autoload": {
+        "psr-4": {
+            "EcbExchangeRates\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Stefan Watzinger",
+            "email": "stefanwatzingerfrankfurt@gmail.com"
+        }
+    ],
+    "require": {}
+}
