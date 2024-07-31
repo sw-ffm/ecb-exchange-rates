@@ -1,7 +1,6 @@
 <?php 
 
-use EcbExchangeRates\EcbExchangeRates;
-$GLOBALS['ezb_rates'] = new EcbExchangeRates;
+$GLOBALS['ezb_rates'] = new EcbExchangeRates\EcbExchangeRates;
 
 
 it('Data array has exchange rate values', function () {
